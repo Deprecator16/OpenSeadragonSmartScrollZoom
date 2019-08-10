@@ -50,7 +50,7 @@
         //Create handler for logic
         this.viewer.addHandler("canvas-scroll", function () {
             //Do nothing if not enabled
-            if (!this.enabled) {
+            if (!self.enabled) {
                 return;
             }
 
@@ -144,4 +144,4 @@
             this.enabled = !this.enabled;
         }
     };
- })
+ })(OpenSeadragon);
