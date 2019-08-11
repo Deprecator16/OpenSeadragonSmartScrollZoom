@@ -36,3 +36,18 @@ Here's a list of the properties that can be defined, taken directly from the sou
 4. maxZoomPerScroll {Number} - Maximum zoom factor that can be reached.
 
 5. zoomIncrement {Number} - Amount to increment zoom factor by with every scroll after minScrolls
+
+6. enabled {Boolean} - Whether or not the scroll zoom logic is currently active
+
+To change a property, call the SmartScrollZoom object with the changed property. For example, if you wanted to change the minScrolls property to 4 scrolls:
+`````javascript
+viewer.smartScrollZoom({
+  minScrolls: 4,
+  ...
+});
+`````
+To toggle on and off the enabled property, call toggleEnable():
+
+`````javascript
+viewer.smartScrollZoom.toggleEnable();
+`````
