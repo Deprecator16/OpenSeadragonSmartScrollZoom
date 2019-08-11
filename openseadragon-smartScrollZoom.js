@@ -43,7 +43,7 @@
         this.minZoomPerScroll = options.minZoomPerScroll || 1.2; //OpenSeadragon has a default of 1.2
         this.maxZoomPerScroll = options.maxZoomPerScroll || 2.5;
         this.zoomIncrement = options.zoomIncrement || 0.2;
-        this.enabled = options.enabled || true;
+        this.enabled = options.enabled ? true : false;
 
         var self = this;
 
