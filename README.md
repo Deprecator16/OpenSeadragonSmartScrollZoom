@@ -18,9 +18,9 @@ var viewer = new OpenSeadragon(...);
 
 //Define smartScrollZoom for this viewer
 viewer.smartScrollZoom({
-  minWidth: ...,
-  pixelsPerMeter: ...,
-  color: ...,
+  minScrolls: ...,
+  timeThreshold: ...,
+  zoomIncrement: ...,
   ...
 });
 `````
